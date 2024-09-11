@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HERO ANIMATION */
+@keyframes slide-in-left {
+    0% {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(10%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(-10%);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in-left {
+    animation: slide-in-left 1s ease-out forwards;
+  }
+  
+  .slide-in-right {
+    animation: slide-in-right 1s ease-out forwards;
+  }
+  
+  /* HIDE SCROLLBAR IN ITEM DETAIL */
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
