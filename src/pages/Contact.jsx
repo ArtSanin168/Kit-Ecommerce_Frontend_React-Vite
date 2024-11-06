@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from '../components/Title';
+import { assets } from '../assets/assets';
 
 const Contact = () => {
   return (
@@ -9,18 +10,18 @@ const Contact = () => {
         <Title className text1="CONTACT" text2="US" />
         </h1>
 
-        <div className="flex flex-col lg:flex-row lg:space-x-8 p-6">
+        <div className="bg-black flex flex-col lg:flex-row lg:space-x-8 p-6 rounded-lg">
           {/* Image Section */}
-          <div className="flex justify-center items-center lg:w-1/2 mb-6 lg:mb-0">
+          <div className="bg-red-800 flex justify-center items-center lg:w-1/2 mb-6 lg:mb-0 rounded-lg">
             <img
-              src="https://phantom-marca.unidadeditorial.es/8d39260a0da698e5054a4b7790da7a71/resize/828/f/jpg/assets/multimedia/imagenes/2023/06/27/16878766261872.jpg"
+              src={assets.contact}
               alt="Contact Us"
-              className="w-full h-auto object-cover max-w-md rounded-lg shadow-xl transition-transform duration-300 hover:scale-105"
+              className=" w-full h-auto object-cover max-w-md rounded-lg shadow-xl transition-transform duration-300 hover:scale-105"
             />
           </div>
 
           {/* Contact Information */}
-          <div className="flex flex-col lg:w-1/2 lg:space-y-6 mb-6 lg:pl-8">
+          <div className="text-white flex flex-col lg:w-1/2 lg:space-y-6 mb-6 lg:pl-8">
             <h2 className="text-3xl font-bold text-blue-600 mb-6">Get in Touch</h2>
             <p className="text-lg mb-4">
               <strong>Email:</strong> support@yourstore.com

@@ -3,10 +3,11 @@ import Title from '../components/Title'
 import ProvinceSelect from '../components/ProvinceSelect'
 import CartTotal from '../components/cartTotal'
 import { ShopContext } from '../context/ShopContext'
+import { assets } from '../assets/assets'
 
 const PlaceOrder = () => {
 
-  const [method,setMethod] = useState('cod');
+  const [method,setMethod] = useState('aba');
 
   const {navigate} = useContext(ShopContext);
 
@@ -48,19 +49,19 @@ const PlaceOrder = () => {
             <div className='flex flex-col gap-3 lg:flex-row '>
               <div onClick={() => setMethod('aba')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                 <p className={`min-w-3.5 min-h-3.5 border rounded-full ${method === 'aba' ? 'bg-green-400' : ''}`}></p>
-                <img className='h-8 mx-4' src="https://nhocambodia.org/secure_donation/asset/ic_ABA-PAY_3x.png" alt="" />
+                <img className='h-8 mx-4' src={assets.aba} alt="" />
               </div>
               <div onClick={() => setMethod('bakong')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
                 <p className={`min-w-3.5 min-h-3.5 border rounded-full ${method === 'bakong' ? 'bg-green-400' : ''}`}></p>
-                <img className='h-8 mx-4' src="https://uat-rkf.codingate.dev/wp-content/uploads/2022/06/KHQR-available-here-logo-with-bg.jpg" alt="" />
+                <img className='h-8 mx-4' src={assets.bakong} alt="" />
               </div>
               <div onClick={() => setMethod('cod')} className='flex items-center gap-3 border p-2 px-3 cursor-pointer'>
-                <p className={`min-w-3.5 min-h-3.5 border rounded-full ${method === 'cod' ? 'bg-green-400' : ''}`}></p>
-                <img className='h-8 mx-4' src="https://support.sitegiant.com/wp-content/uploads/2022/08/cash-on-delivery-banner.png" alt="" />
+                <p className={`min-w-3.5 min-h-3.5 border rounded-full ${method === 'visa' ? 'bg-green-400' : ''}`}></p>
+                <img className='h-8 mx-4' src={assets.visa} alt="" />
               </div>  
             </div>
               <div className='text-center'>
-                <button onClick={() => navigate('/order')} className='bg-blue-500 text-base active:bg-blue-700 text-white py-3 px-16 my-8 shadow-lg rounded-lg '>Place Order</button>
+                <button onClick={() => navigate('/orders')} className='bg-blue-500 text-base active:bg-blue-700 text-white py-3 px-16 my-8 shadow-lg rounded-lg '>Place Order</button>
               </div>
           </div>
 

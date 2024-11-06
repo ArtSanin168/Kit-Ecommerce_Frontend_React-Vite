@@ -30,6 +30,13 @@ import star_dull_icon from './star_dull_icon.png'
 import star_icon from './star_icon.png'
 import bin_icon from './bin_icon.png'
 
+import about from './about.jpg'
+import contact from './contact.jpg'
+
+import aba from './aba.png'
+import bakong from './bakong.jpg'
+import visa from './visa.png'
+
 export const assets = {
     exchange_icon,
     quality_icon,
@@ -37,8 +44,13 @@ export const assets = {
     star_dull_icon,
     star_icon,
     bin_icon,
-    dropdown_icon
-
+    dropdown_icon,
+    about,
+    contact,
+    aba,
+    bakong,
+    visa
+    
 }
 
 export const products = [

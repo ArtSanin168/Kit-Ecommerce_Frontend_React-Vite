@@ -44,8 +44,8 @@ const Login = () => {
                 <p class="text-center text-sm text-gray-500">Already have an account?
                     {
                         currentState === 'Login' 
-                        ? <button onClick={() => setCurrentState('Sing Up')} class=" ml-2 text-sm text-gray-600 hover:underline">Create account</button>
-                        :<button onClick={() => setCurrentState('Login')} class=" ml-2 text-sm text-gray-600 hover:underline">Login</button>
+                        ? <button onClick={() => setCurrentState('Sing Up')} class=" ml-2 text-sm text-blue-600 hover:underline">Create account</button>
+                        :<button onClick={() => setCurrentState('Login')} class=" ml-2 text-sm text-blue-600 hover:underline">Login</button>
                     }
                 </p>
             </form>
